@@ -3,7 +3,7 @@ const accessKey = "v37zn5qYHfoJalVN3ceBrtBQXD-GYQxShVmRUmm7JFg";
 const searchForm = document.getElementById("search-form");
 const searchBox = document.getElementById("search-box");
 const searchResult = document.getElementById("search-result");
-const viewMoreBtn = document.getElementById("View-more-btn"); // Make sure the ID matches your HTML
+const viewMoreBtn = document.getElementById("View-more-btn"); 
 
 let keyword = "";
 let page = 1;
@@ -17,7 +17,7 @@ async function searchImages() {
         const data = await response.json();
 
         if (page === 1) {
-            searchResult.innerHTML = ""; // Clear previous results when searching again
+            searchResult.innerHTML = ""; 
         }
 
         const results = data.results;
